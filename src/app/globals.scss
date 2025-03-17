@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: "Gliker";
+  src: url("./Gliker.ttf");
+}
+
+
+
+
+// Home component
+
+.hero-img {
+  width: 17cm;
+  height: auto;
+  // filter: drop-shadow(2px 2px 5px white);
+}
+
+.home-hero-box {
+  display: flex;
+  justify-content: space-between;
+  gap: 2cm;
+  padding: 0cm 10vw;
+  align-items: center;
+  // border: 5px solid rgb(201, 26, 26);
+
+
+}
+
+.subtext {
+  color: rgb(206, 206, 206);
+  font-family: gliker;
+  font-size: 20px;
+  letter-spacing: .03cm;
+}
+
+.home-hero-left {
+  // padding:  1cm;
+  // border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  gap: .3cm;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, hsla(271, 76%, 53%, 1) 0%, hsla(31, 77%, 58%, 1) 34%, hsla(86, 40%, 67%, 1) 55%, hsla(251, 59%, 52%, 1) 75%, hsla(302, 82%, 76%, 1) 92%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  background-size: 200%;
+}
+
+.t2 {
+  background: linear-gradient(135deg, hsla(173, 77%, 53%, 1) 10%, hsla(219, 77%, 58%, 1) 27%, hsla(0, 78%, 75%, 1) 51%, hsla(60, 49%, 61%, 1) 75%, hsla(285, 47%, 53%, 1) 92%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  background-size: 200%;
+}
+
+
+.go {
+  width: fit-content;
+  padding: .3cm .5cm;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 1cm;
+  font-size: 18px;
+  font-family: "Parkinsans";
+  // letter-spacing: .03cm;
+  background-color: blueviolet;
+  color: white;
+  border: none;
+
+}
+
+.subTagline {
+  color: rgb(223, 223, 223);
+  font-family: gliker;
+  font-size: 24px;
+  letter-spacing: .05cm;
+}
+
+.tagline {
+  font-family: Gliker;
+  color: white;
+  font-size: 70px;
+  letter-spacing: .05cm;
+}
+
+.home-hero {
+  box-sizing: border-box;
+  // border: 5px solid rgb(201, 26, 26);
+
+  // aspect-ratio: 16/9;
+  height: 100svh;
+  width: 100%;
+  position: relative;
+  display: grid;
+  grid-template-rows: 3cm auto;
+
+  &::before {
+    position: absolute;
+    content: "";
+    inset: 0;
+    // background: url("../images/coding-man.jpg") no-repeat center;
+    // background-size: cover;
+    z-index: -1;
+    // background-color: blueviolet;
+    // filter: brightness(10%);
+    background-color: #0d0516;
+    // background-color: #1c1c3c;
+    // animation: changeBG 4s ease-in-out infinite alternate;
+
+  }
+}
+
+
+
+
+
+
+@keyframes changeBG {
+  from {
+    background-color: #0d0516;
+  }
+
+  to {
+    background-color: #1c1c3c;
+  }
+}
+
+
+.home-card-left {
+  padding: 1cm;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.home-lower {
+  padding: 3cm 10vw;
+}
+
+.home-about-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 3cm;
+}
+
+.home-card {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  gap: 1cm;
+  // border: 2px solid red;
+  height: auto;
+  aspect-ratio: 16/7;
+  // position: sticky;
+  // top: 0;
+  position: relative;
+  // margin-top: 2cm;
+
+  border-radius: 10px;
+  transition: all 0.5s ease;
+  /* smooth animation */
+  will-change: transform;
+  /* optimize for smoothness */
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.tagCard {
+  text-align: center;
+
+}
+
+.subtagCard {
+  font-size: 20px;
+  opacity: .7;
+}
+
+.home-card-img {
+  height: 100%;
+  width: auto;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.home-card:nth-child(1) {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+
+}
+
+.home-card:nth-child(2) {
+  background: linear-gradient(135deg, #1a1a2e, #16213e);
+
+}
+
+.home-card:nth-child(3) {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+
+}
+
+.home-card:nth-child(4) {
+  background: linear-gradient(135deg, #000428, #004e92);
+
+}
+
+.home-card:nth-child(5) {
+  box-shadow: none;
+  height: 0cm;
+  // z-index: 7;
+  // border: 2px solid red;
+
+}
+
+.home-card:nth-child(1) {
+  position: sticky;
+  top: 1cm;
+  z-index: 1;
+}
+
+.home-card:nth-child(2) {
+  position: sticky;
+  top: 1cm;
+  z-index: 2;
+}
+
+.home-card:nth-child(3) {
+  position: sticky;
+  top: 1cm;
+  z-index: 3;
+}
+
+.home-card:nth-child(4) {
+  position: sticky;
+  top: 1cm;
+  z-index: 4;
+}

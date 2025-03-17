@@ -1,0 +1,28 @@
+.Nav {
+    padding: 0.5cm 10vw;
+}
+
+.logo-img {
+    width: 2cm;
+    height: auto;
+    // border: 1px solid black;
+    opacity: .7;
+}
+
+.logo-box {
+    display: flex;
+    align-items: center;
+    // gap: .2cm;
+}
+
+.logoText{
+    color: rgb(145, 145, 145);
+    font-family: Parkinsans;
+    font-size: 26px;
+    line-height: .8cm;
+}
+
+.cssT{
+    color: blueviolet;
+    font-weight: 600;
+}
