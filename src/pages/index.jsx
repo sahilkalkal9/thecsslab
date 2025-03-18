@@ -19,7 +19,24 @@ export default function Home() {
                             Welcome to The CSS Lab
                         </p> */}
                         <p className="tagline">
-                            The <span className="gradient-text" >Ultimate</span> Lab for Front End <span className="gradient-text t2">Wizards</span>
+                            {/* The <span className="gradient-text" >Ultimate</span> Lab for Front End <span className="gradient-text t2">Wizards</span> */}
+
+                            {"The ".split('').map((char, index) => (
+                                <span key={index} className="letter">{char}</span>
+                            ))}
+
+                            {"Ultimate".split('').map((char, index) => (
+                                <span key={`u-${index}`} className="letter gradient-text">{char}</span>
+                            ))}
+
+                            {" Lab for Front End ".split('').map((char, index) => (
+                                <span key={`l-${index}`} className="letter">{char}</span>
+                            ))}
+
+                            {"Wizards".split('').map((char, index) => (
+                                <span key={`w-${index}`} className="letter gradient-text t2">{char}</span>
+                            ))}
+
                         </p>
                         <p className="subTagline">
                             Let's turn stylesheets into art
@@ -44,7 +61,7 @@ export default function Home() {
                                 Who we are ?
                             </p>
                             <p className="tagline tagCard">
-                                The Playground for Modern Front-End Devs
+                                The Playground for Modern <span className="gradient-text">Front-End Devs</span>
                             </p>
                             <p className="subTagline subtagCard">
                                 Where passionate coders decode the art of CSS
@@ -64,7 +81,7 @@ export default function Home() {
                                 What we believe ?
                             </p>
                             <p className="tagline tagCard">
-                                Code it Clean, Craft it Bold
+                                Code it <span className="gradient-text" >Clean</span>, Craft it <span className="gradient-text">Bold</span>
                             </p>
                             <p className="subTagline subtagCard">
                                 We believe CSS isn't just styling — it's storytelling
@@ -80,7 +97,7 @@ export default function Home() {
                                 What we do ?
                             </p>
                             <p className="tagline tagCard">
-                                Master the Science Behind Stunning UIs
+                                Master the <span className="gradient-text">Science</span> Behind Stunning UIs
                             </p>
                             <p className="subTagline subtagCard">
                                 From grids to gradients, animations to accessibility, we break it down and level you up
